@@ -17,18 +17,20 @@ public class Pattern6
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the number: ");
         int num = in.nextInt();
-
+        int temp = 1;
         for(int i=0; i<num; i++)
         {
             for(int j=0; j<num-i-1; j++)
             {
                 System.out.print(" ");
             }
-            for(int j=0; j<num; j++)
+            for(int j=0; j<=i; j++)
             {
-                System.out.print(j+1);
+                System.out.print(temp+" ");
+                temp++;
             }
             System.out.println();
         }
+        in.close();
     }    
 }
