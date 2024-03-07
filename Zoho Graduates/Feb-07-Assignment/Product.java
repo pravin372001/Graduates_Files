@@ -2,6 +2,7 @@
 
 public class Product 
 {
+    byte ram = 8;
     short id = 101;
     String name = "Samsung M31";
     float price = 35000.00f;
@@ -13,6 +14,7 @@ public class Product
     public static void main(String[] args) 
     {
         Product product = new Product();
+        System.out.println(product.ram);
         System.out.println(product.id);
         System.out.println(product.name);
         System.out.println(product.price);

@@ -1,6 +1,7 @@
 // In the BMI calculator program done in Java Assignment 2, write methods to get height and weight for 2 or more persons and compare their BMIs.
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class BMICalculator
@@ -23,7 +24,7 @@ public class BMICalculator
             BMI bmi = new BMI(name, weight, height);
             bmis.add(bmi);
         }
-        double min = Integer.MAX_VALUE;
+        Collections.sort(bmis);
         System.out.println("Name       |BMI       |Remark");
         for(int i = 0; i < noOfPerson; i++)
         {

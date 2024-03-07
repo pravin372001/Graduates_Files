@@ -11,7 +11,7 @@ public class DelcareVariable
             System.out.println(a);
             System.out.println(b);
         }
-        System.out.println(a);  //a cannot be resolved to a variable
+        //System.out.println(a);  //a cannot be resolved to a variable
         System.out.println(b);
     }    
 }
