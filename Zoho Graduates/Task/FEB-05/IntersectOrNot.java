@@ -48,5 +48,6 @@ public class IntersectOrNot
                 System.out.println("Does not intersect");
             }
         }
+        in.close();
     }
 }

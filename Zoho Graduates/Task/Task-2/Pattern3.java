@@ -11,21 +11,30 @@ public class Pattern3
         for(int i=1; i<=n; i++)
         {
             m = 1;
-            for(int j=i; j<n; j++)
-            {
-                System.out.print("  ");
-            }
+            // for(int j=i; j<n; j++)
+            // {
+            //     System.out.print("  ");
+            // }
 
-            for(int j=1; j<=2*i-1; j++)
+            for(int j=1, k = i; j<=2*i-1; )
             {
-                System.out.print(m+" ");
-                if(j+1>i)
+                if(k<n)
                 {
-                    m--;
+                    System.out.print("  ");
+                    k++;
                 }
                 else
                 {
-                    m++;
+                    System.out.print(m+" ");
+                    if(j+1>i)
+                    {
+                        m--;
+                    }
+                    else
+                    {
+                        m++;
+                    }
+                    j++;
                 }
             }
             System.out.println();
