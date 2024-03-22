@@ -31,3 +31,43 @@ Moral of the Day --- > Dont waste more time in spirtual places utilize the time
 2.Watched pre recorded videos of java Chapter - 3
 
 ----------------------------------------------------------------
+
+18-03-2024(mon)
+Book Reading session by Raj san
+Java class oops concept session by tamarai san
+
+Problem solving : Leetcode - 485, 492
+
+Worked on two console based application
+ -Library management console application 	
+ -InterviewPanel application 
+---------------------------------------------------------------
+
+19-03-2024(tue)
+Java class (topic - constructor) by tamarai san
+Console discussion with batch mates
+Application development(topic - optimization) by bala san
+
+worked on InterviewPanel and library management system console application
+Solved Assignment - 5(Arrays)
+
+Problem solving 
+Leet code:
+
+2325. Decode the Message
+415. Add Strings
+412. Fizz Buzz
+--------------------------------------------------------------
+20-03-2024(wed)
+Java class (topic - Inheritance) by tamarai san
+Completed Assignment-6 (Strings)
+Code chef context attempted 5 problems (Solved 3 problems)
+
+worked on InterviewPanel console application
+
+Problem solving 
+Leet code:
+
+520. Detect Capital
+551. Student Attendance Record I
+--------------------------------------------------------------
