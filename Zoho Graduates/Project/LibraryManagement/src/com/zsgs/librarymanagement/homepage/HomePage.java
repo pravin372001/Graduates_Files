@@ -28,14 +28,22 @@ public class HomePage {
         IssueBookView issueBookView = new IssueBookView();
         int choice;
         while (true) {
-            System.out.println("<-------- Menu ------->");
-            System.out
-                    .println(
-                            "1. Managae Books \n2. Manage Members \n3. Issue Book \n4. Return Book \n5. Issue History \n6. Issued Books \n7. Overdue Books \n8. Logout  \n"
-                                    +
-                                    "9.Exit "
-                                    + //
-                                    "Enter your choice: ");
+            System.out.print(
+                    "------------------------------------------------------\n" +
+                            "| Option |              Main Menu                    |\n" +
+                            "------------------------------------------------------\n" +
+                            "|   1    | Manage Books                              |\n" +
+                            "|   2    | Manage Members                            |\n" +
+                            "|   3    | Issue Book                                |\n" +
+                            "|   4    | Return Book                               |\n" +
+                            "|   5    | Issue History                             |\n" +
+                            "|   6    | Issued Books                              |\n" +
+                            "|   7    | Overdue Books                             |\n" +
+                            "|   8    | Logout                                    |\n" +
+                            "|   9    | Exit                                      |\n" +
+                            "------------------------------------------------------\n" +
+                            "Enter your choice: ");
+
             choice = scanner.nextInt();
             switch (choice) {
                 case 1: {
@@ -44,7 +52,17 @@ public class HomePage {
                     while (flag) {
                         System.out.println("<-------- Book Menu ------->");
                         System.out.print(
-                                "\n1. Add Book \n2. Show All Books \n3. Search Book by Id \n4. Search Book by Name \n5. Update Book count \n6. Return to main menu \n\nEnter your choice: ");
+                                "------------------------------------------------------\n" +
+                                        "| Option |              Book Menu                    |\n" +
+                                        "------------------------------------------------------\n" +
+                                        "|   1    | Add Book                                  |\n" +
+                                        "|   2    | Show All Books                            |\n" +
+                                        "|   3    | Search Book by Id                         |\n" +
+                                        "|   4    | Search Book by Name                       |\n" +
+                                        "|   5    | Update Book count                         |\n" +
+                                        "|   6    | Return to main menu                       |\n" +
+                                        "------------------------------------------------------\n" +
+                                        "Enter your choice: ");
                         bookChoice = scanner.nextInt();
                         switch (bookChoice) {
                             case 1:
@@ -82,9 +100,16 @@ public class HomePage {
                     int bookChoice;
                     boolean flag = true;
                     while (flag) {
-                        System.out.println("<-------- Member Menu ------->");
-                        System.out.println(
-                                "\n1. Add Member \n2. Show All Members \n3. Delete Member by Id \n4. Return to main menu \n\nEnter your choice: ");
+                        System.out.print(
+                                "------------------------------------------------------\n" +
+                                        "| Option |              Member Menu                  |\n" +
+                                        "------------------------------------------------------\n" +
+                                        "|   1    | Add Member                                |\n" +
+                                        "|   2    | Show All Members                          |\n" +
+                                        "|   3    | Delete Member by Id                       |\n" +
+                                        "|   4    | Return to main menu                       |\n" +
+                                        "------------------------------------------------------\n" +
+                                        "Enter your choice: ");
                         bookChoice = scanner.nextInt();
                         switch (bookChoice) {
                             case 1:

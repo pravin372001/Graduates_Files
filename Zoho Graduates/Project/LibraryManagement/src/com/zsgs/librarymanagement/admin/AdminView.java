@@ -46,6 +46,5 @@ public class AdminView {
         System.out.println("Setup completed successfully...");
         LibrarySetUpView librarySetupView = new LibrarySetUpView();
         librarySetupView.init();
-
     }
 }
