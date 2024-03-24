@@ -1,5 +1,6 @@
 package com.zsgs.librarymanagement;
 
+import com.zsgs.librarymanagement.Librarydatabase.LibraryDatabase;
 import com.zsgs.librarymanagement.login.LoginView;
 
 public class LibraryManagement {
@@ -22,7 +23,9 @@ public class LibraryManagement {
 
     private void create() {
         LoginView login = new LoginView();
-        login.init();
+        if (!login.init()) {
+            login.init();
+        }
     }
 
     public String getAppName() {
@@ -34,6 +37,13 @@ public class LibraryManagement {
     }
 
     public static void main(String[] args) {
+        System.out.println("Welcome to " + LibraryManagement.getInstance().getAppName() + " version "
+                + LibraryManagement.getInstance().getAppVersion());
+        LibraryManagement.getInstance().initDb();
         LibraryManagement.getInstance().create();
+    }
+
+    private void initDb() {
+        LibraryDatabase.getInstance().getDataFromDB();
     }
 }

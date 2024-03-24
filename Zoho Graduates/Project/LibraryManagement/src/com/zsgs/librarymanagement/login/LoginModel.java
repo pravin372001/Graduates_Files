@@ -16,20 +16,23 @@ public class LoginModel {
         return Validator.validatePassword(passWord);
     }
 
-    public void validateUser(String userName, String password) {
+    public boolean validateUser(String userName, String password) {
         if (!validatePass(password)) {
             loginView.showMessage("Invalid Format of Password");
             loginView.init();
+            return false;
         }
         if (isValidUser(userName)) {
             if (isValidPassword(password)) {
                 loginView.onSuccess();
+                return true;
             } else {
                 loginView.showMessage("Invalid Password");
             }
         } else {
             loginView.showMessage("Invalid User Name");
         }
+        return false;
     }
 
     private boolean isValidUser(String userName) {

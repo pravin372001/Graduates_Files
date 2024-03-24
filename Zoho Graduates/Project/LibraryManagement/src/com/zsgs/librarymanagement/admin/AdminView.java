@@ -47,4 +47,8 @@ public class AdminView {
         LibrarySetUpView librarySetupView = new LibrarySetUpView();
         librarySetupView.init();
     }
+
+    public void showAlert(String string) {
+        System.out.println(string);
+    }
 }

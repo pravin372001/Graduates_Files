@@ -24,11 +24,17 @@ public class IssueBookView {
     }
 
     public void returnBook() {
-        issuedBooks();
         System.out.println("\n\nReturn Book\n\n");
+        issueBooks();
         System.out.print("Enter the Issue Id :");
         int issueId = scanner.nextInt();
         issueBookModel.returnBook(issueId);
+    }
+
+    public void showAllOverDuesById() {
+        System.out.print("Enter the user id : ");
+        int userId = scanner.nextInt();
+        issueBookModel.showAllOverDues(userId);
     }
 
     public void showAllOverDues() {
@@ -41,5 +47,11 @@ public class IssueBookView {
 
     public void issuedBooks() {
         issueBookModel.issuedBooks();
+    }
+
+    public void issueBooks() {
+        System.out.print("Enter the user id : ");
+        int userId = scanner.nextInt();
+        issueBookModel.issueBooks(userId);
     }
 }

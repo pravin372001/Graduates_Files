@@ -25,7 +25,7 @@ public class LibrarySetUpView {
   }
 
   public void showAlert(String alert) {
-    System.out.println("\n");
+    System.out.println("\n\n" + alert + "\n\n");
   }
 
   public void initiateSetup() {

@@ -16,11 +16,25 @@ public class IssueBookModel {
 
     public void issueBook(int userId, int bookId) {
         IssueBook issueBook = new IssueBook(userId, bookId);
-        LibraryDatabase.getInstance().addIssueBooks(issueBook);
         Book book = LibraryDatabase.getInstance().getBookById(bookId);
+        if (book == null) {
+            issueBookView.showMessage("Book not found");
+            return;
+        }
+        if (LibraryDatabase.getInstance().getUserById(userId) == null) {
+            issueBookView.showMessage("User Not found");
+            return;
+        }
+        LibraryDatabase.getInstance().addIssueBooks(issueBook);
         book.setAvailableCount(book.getAvailableCount() - 1);
         LibraryDatabase.getInstance().updateBook(book);
+        serializeIssueBookList();
         issueBookView.showMessage("Book issued successfully");
+    }
+
+    private void serializeIssueBookList() {
+        LibraryDatabase.getInstance().serializeIssueBookList(LibraryDatabase.getInstance().getAllIssueBooks());
+        issueBookView.showMessage("Issue book list serialized successfully");
     }
 
     public void returnBook(int issueId) {
@@ -36,6 +50,7 @@ public class IssueBookModel {
             LibraryDatabase.getInstance().updateUser(user);
         }
         issueBookView.showMessage("Book returned successfully");
+        serializeIssueBookList();
     }
 
     public void showAllOverDues() {
@@ -63,12 +78,58 @@ public class IssueBookModel {
     }
 
     public void issuedBooks() {
+        if (LibraryDatabase.getInstance().getAllIssueBooks().isEmpty()) {
+            issueBookView.showMessage("No books issued");
+            return;
+        }
         for (IssueBook issueBook : LibraryDatabase.getInstance().getAllIssueBooks()) {
             if (issueBook.getReturnDate() == null) {
                 issueBookView.showMessage("Issue Id: " + issueBook.getIssueId() + " User: "
                         + LibraryDatabase.getInstance().getUserById(issueBook.getUserId()) + " Book Id: "
                         + issueBook.getBookId() + " Issue Date: " + issueBook.getIssueDate());
             }
+        }
+    }
+
+    public void issueBooks(int userId) {
+        if (LibraryDatabase.getInstance().getUserById(userId) == null) {
+            issueBookView.showMessage("User Not found");
+            return;
+        }
+        boolean hasBook = false;
+        for (IssueBook issueBook : LibraryDatabase.getInstance().getAllIssueBooks()) {
+            if (issueBook.getUserId() == userId) {
+                hasBook = true;
+                issueBookView.showMessage("Issue Id: " + issueBook.getIssueId() + " User: "
+                        + LibraryDatabase.getInstance().getUserById(issueBook.getUserId()) + " Book Id: "
+                        + issueBook.getBookId() + " Issue Date: " + issueBook.getIssueDate());
+            }
+        }
+        if (!hasBook) {
+            issueBookView.showMessage("No books issued to this user");
+            return;
+        }
+    }
+
+    public void showAllOverDues(int userId) {
+        if (LibraryDatabase.getInstance().getUserById(userId) == null) {
+            issueBookView.showMessage("User Not found");
+            return;
+        }
+        boolean flag = false;
+        for (IssueBook issueBook : LibraryDatabase.getInstance().getAllIssueBooks()) {
+            if (LibraryDatabase.getInstance().isBookOverdue(issueBook.getIssueId()) > 0
+                    && issueBook.getUserId() == userId) {
+                flag = true;
+                issueBookView.showMessage("Issue Id: " + issueBook.getIssueId() + " User: "
+                        + LibraryDatabase.getInstance().getUserById(issueBook.getUserId()) + " Book Id: "
+                        + issueBook.getBookId() + " Overdue Days: "
+                        + LibraryDatabase.getInstance().isBookOverdue(issueBook.getIssueId()) + " Overdue Fine: "
+                        + LibraryDatabase.getInstance().isBookOverdue(issueBook.getIssueId()) * 10);
+            }
+        }
+        if (!flag) {
+            issueBookView.showMessage("No books issued to this user");
         }
     }
 

@@ -14,6 +14,12 @@ public class UserModel {
 
     public void addNewUser(User user) {
         LibraryDatabase.getInstance().addNewUser(user);
+        serializeUserList();
+    }
+
+    private void serializeUserList() {
+        LibraryDatabase.getInstance().serializeUserList(getAllUsers());
+        userView.showAlert("User Details Saved Successfully");
     }
 
     public List<User> getAllUsers() {
@@ -23,6 +29,7 @@ public class UserModel {
     public void removeUserById(int userId) {
         if (LibraryDatabase.getInstance().removeUserById(userId)) {
             userView.showAlert("User removed successfully");
+            serializeUserList();
         } else {
             userView.showAlert("User not found");
         }

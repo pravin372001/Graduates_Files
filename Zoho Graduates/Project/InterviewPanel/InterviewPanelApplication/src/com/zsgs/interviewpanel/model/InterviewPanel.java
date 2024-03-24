@@ -2,19 +2,16 @@ package com.zsgs.interviewpanel.model;
 
 import java.util.Date;
 import java.util.List;
-import java.util.ArrayList;
 
 public class InterviewPanel {
     private int interviewId;
     private static int interviewIdCounter = 1;
-    private List<Candidate> candidateList;
     private int adminId;
     private Date interviewDate;
     private String status;
 
     public InterviewPanel(List<Candidate> candidateList, int adminId, Date interviewDate, String status) {
         this.interviewId = interviewIdCounter++;
-        this.candidateList = new ArrayList<>();
         this.adminId = adminId;
         this.interviewDate = interviewDate;
         this.status = status;
@@ -50,14 +47,6 @@ public class InterviewPanel {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public void addCandidate(Candidate candidate) {
-        candidateList.add(candidate);
-    }
-
-    public List<Candidate> getCandidateList() {
-        return candidateList;
     }
 
 }

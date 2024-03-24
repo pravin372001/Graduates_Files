@@ -17,6 +17,7 @@ public class ManageBookModel {
     public void addBook(Book book) {
         LibraryDatabase.getInstance().addBook(book);
         manageBookView.showMessage("Successfully book added");
+        serializeBookList();
     }
 
     public List<Book> showAllBooks() {
@@ -64,6 +65,12 @@ public class ManageBookModel {
                 break;
             }
         }
+        serializeBookList();
+    }
+
+    public void serializeBookList() {
+        LibraryDatabase.getInstance().serializeBookList(LibraryDatabase.getInstance().getBookList());
+        manageBookView.showMessage("Book list serialized");
     }
 
 }

@@ -2,9 +2,10 @@ package com.zsgs.librarymanagement.model;
 
 import java.util.Date;
 
+import com.zsgs.librarymanagement.Librarydatabase.LibraryDatabase;
+
 public class IssueBook {
     private int issueId;
-    private static int issueIdCount;
     private int userId;
     private int bookId;
     private Date issueDate;
@@ -12,7 +13,7 @@ public class IssueBook {
     private static int overDueDays = 10;
 
     public IssueBook(int userId, int bookId) {
-        this.issueId = ++issueIdCount;
+        this.issueId = LibraryDatabase.getInstance().getAllIssueBooks().size() + 1;
         this.userId = userId;
         this.bookId = bookId;
         this.issueDate = new Date();

@@ -1,9 +1,10 @@
 package com.zsgs.librarymanagement.model;
 
+import com.zsgs.librarymanagement.Librarydatabase.LibraryDatabase;
+
 public class User {
     private String name;
     private int id;
-    private static int idCount;
     private String phoneNo;
     private String emailId;
     private String address;
@@ -11,7 +12,7 @@ public class User {
 
     public User(String name, String phoneNo, String emailId, String address) {
         this.name = name;
-        this.id = ++idCount;
+        this.id = LibraryDatabase.getInstance().getUserList().size() + 1;
         this.phoneNo = phoneNo;
         this.emailId = emailId;
         this.address = address;

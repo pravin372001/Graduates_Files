@@ -3,6 +3,16 @@ package com.zsgs.librarymanagement.validator;
 import java.util.regex.Pattern;
 
 public class Validator {
+
+    public static boolean validateName(String name) {
+        String pattern = "^[A-Z][a-z]*$";
+        Pattern p = Pattern.compile(pattern);
+        if (name == null) {
+            return false;
+        }
+        return p.matcher(name).matches();
+    }
+
     public static boolean validateEmail(String emailId) {
         String pattern = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
                 + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
@@ -31,5 +41,4 @@ public class Validator {
         return p.matcher(phoneNo).matches();
     }
 
-    
 }

@@ -16,13 +16,13 @@ public class LoginView {
         loginModel = new LoginModel(this);
     }
 
-    public void init() {
+    public boolean init() {
         System.out.println("Login Page");
         System.out.print("Enter the user name: ");
         String userName = console.readLine();
         System.out.print("Enter the password: ");
         char[] password = console.readPassword();
-        loginModel.validateUser(userName, new String(password));
+        return loginModel.validateUser(userName, new String(password));
     }
 
     public void onSuccess() {

@@ -21,5 +21,11 @@ class LibrarySetUpModel {
 
     public void saveLibraryDetails(Library library) {
         LibraryDatabase.getInstance().setLibrary(library);
+        serializeLibraryDetails(library);
+    }
+
+    private void serializeLibraryDetails(Library library) {
+        LibraryDatabase.getInstance().serializeLibrary(library);
+        librarySetUpView.showAlert("Library Details Saved Successfully");
     }
 }

@@ -1,9 +1,10 @@
 package com.zsgs.librarymanagement.model;
 
+import com.zsgs.librarymanagement.Librarydatabase.LibraryDatabase;
+
 public class Book {
     private String bookName;
     private int bookId;
-    private static int bookIdCount;
     private String author;
     private String publication;
     private String edition;
@@ -14,7 +15,7 @@ public class Book {
     public Book(String bookName, String author, String publication, String edition, String genre,
             int availableCount, int volume) {
         this.bookName = bookName;
-        this.bookId = ++bookIdCount;
+        this.bookId = LibraryDatabase.getInstance().getBookList().size() + 1;
         this.author = author;
         this.publication = publication;
         this.edition = edition;
@@ -88,7 +89,7 @@ public class Book {
     }
 
     public String toString() {
-        return "Book [bookName=" + bookName + ", bookId=" + bookId + ", author=" + author + ", publication="
+        return "Book [bookId=" + bookId + ", bookName=" + bookName + ", author=" + author + ", publication="
                 + publication + ", edition=" + edition + ", genre=" + genre + ", availableCount=" + availableCount
                 + ", volume=" + volume + "]";
     }

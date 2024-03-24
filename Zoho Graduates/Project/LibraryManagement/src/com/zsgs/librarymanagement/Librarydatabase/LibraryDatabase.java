@@ -1,11 +1,13 @@
 package com.zsgs.librarymanagement.Librarydatabase;
 
+import com.google.gson.reflect.TypeToken;
 import com.zsgs.librarymanagement.model.Admin;
 import com.zsgs.librarymanagement.model.Book;
 import com.zsgs.librarymanagement.model.Credential;
 import com.zsgs.librarymanagement.model.IssueBook;
 import com.zsgs.librarymanagement.model.Library;
 import com.zsgs.librarymanagement.model.User;
+import com.zsgs.librarymanagement.serialize.JsonSerialize;
 
 import java.util.List;
 import java.util.Iterator;
@@ -36,7 +38,7 @@ public class LibraryDatabase {
         this.userList = userList;
     }
 
-    private final Admin admin = new Admin(new Credential("zsgs", "Admin@123"));
+    private Admin admin = new Admin(new Credential("zsgs", "Admin@123"));
 
     public Admin getAdmin() {
         return admin;
@@ -172,4 +174,60 @@ public class LibraryDatabase {
         }
         return null;
     }
+
+    public void serializeBookList(List<Book> bookList) {
+        JsonSerialize.getJsonSerialize().serialize(bookList, "src/com/zsgs/librarymanagement/data/bookList.json");
+    }
+
+    public void serializeUserList(List<User> userList) {
+        JsonSerialize.getJsonSerialize().serialize(userList, "src/com/zsgs/librarymanagement/data/userList.json");
+    }
+
+    public void serializeIssueBookList(List<IssueBook> issueBooks) {
+        JsonSerialize.getJsonSerialize().serialize(issueBooks,
+                "src/com/zsgs/librarymanagement/data/issueBookList.json");
+    }
+
+    public void serializeLibrary(Library library) {
+        JsonSerialize.getJsonSerialize().serialize(library, "src/com/zsgs/librarymanagement/data/library.json");
+    }
+
+    public void serializeAdmin(Admin admin) {
+        JsonSerialize.getJsonSerialize().serialize(admin, "src/com/zsgs/librarymanagement/data/admin.json");
+    }
+
+    private void setAdmin() {
+        this.admin = JsonSerialize.getJsonSerialize().deserialize("src/com/zsgs/librarymanagement/data/admin.json",
+                Admin.class);
+    }
+
+    private void setIssueBooks() {
+        List<IssueBook> issueBooks = JsonSerialize.getJsonSerialize()
+                .deserialize("src/com/zsgs/librarymanagement/data/issueBookList.json",
+                        new TypeToken<List<IssueBook>>() {
+                        });
+        this.issueBooks = issueBooks;
+    }
+
+    public void setUsers() {
+        List<User> userList = JsonSerialize.getJsonSerialize()
+                .deserialize("src/com/zsgs/librarymanagement/data/userList.json", new TypeToken<List<User>>() {
+                });
+        this.userList = userList;
+    }
+
+    public void setBookList() {
+        List<Book> bookList = JsonSerialize.getJsonSerialize()
+                .deserialize("src/com/zsgs/librarymanagement/data/bookList.json", new TypeToken<List<Book>>() {
+                });
+        this.bookList = bookList;
+    }
+
+    public void getDataFromDB() {
+        setBookList();
+        setUsers();
+        setIssueBooks();
+        setAdmin();
+    }
+
 }

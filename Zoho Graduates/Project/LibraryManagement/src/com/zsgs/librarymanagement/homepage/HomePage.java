@@ -34,13 +34,9 @@ public class HomePage {
                             "------------------------------------------------------\n" +
                             "|   1    | Manage Books                              |\n" +
                             "|   2    | Manage Members                            |\n" +
-                            "|   3    | Issue Book                                |\n" +
-                            "|   4    | Return Book                               |\n" +
-                            "|   5    | Issue History                             |\n" +
-                            "|   6    | Issued Books                              |\n" +
-                            "|   7    | Overdue Books                             |\n" +
-                            "|   8    | Logout                                    |\n" +
-                            "|   9    | Exit                                      |\n" +
+                            "|   3    | Manage Issue Book                         |\n" +
+                            "|   4    | Logout                                    |\n" +
+                            "|   5    | Exit                                      |\n" +
                             "------------------------------------------------------\n" +
                             "Enter your choice: ");
 
@@ -137,34 +133,75 @@ public class HomePage {
                 }
 
                 case 3: {
-                    issueBookView.issueBook();
+                    int bookChoice;
+                    boolean flag = true;
+                    while (flag) {
+                        System.out.print(
+                                "------------------------------------------------------\n" +
+                                        "| Option |              Issue Menu                    |\n" +
+                                        "------------------------------------------------------\n" +
+                                        "|   1    | Issue Book                                |\n" +
+                                        "|   2    | Return Book                               |\n" +
+                                        "|   3    | Show Issue History                        |\n" +
+                                        "|   4    | Show Issued Books                         |\n" +
+                                        "|   5    | Show Issued Books by user id              |\n" +
+                                        "|   6    | Show Overdue Books                        |\n" +
+                                        "|   7    | Show Overdue Books by user id             |\n" +
+                                        "|   8    | Return to main menu                       |\n" +
+                                        "------------------------------------------------------\n" +
+                                        "Enter your choice: ");
+                        bookChoice = scanner.nextInt();
+                        switch (bookChoice) {
+                            case 1:
+                                issueBookView.issueBook();
+                                break;
+
+                            case 2:
+                                issueBookView.returnBook();
+                                break;
+
+                            case 3:
+                                issueBookView.issueHistory();
+                                break;
+
+                            case 4:
+                                issueBookView.issuedBooks();
+                                break;
+
+                            case 5:
+                                issueBookView.issueBooks();
+                                break;
+
+                            case 6:
+                                issueBookView.showAllOverDues();
+                                break;
+
+                            case 7:
+                                issueBookView.showAllOverDuesById();
+                                break;
+
+                            case 8:
+                                flag = false;
+                                break;
+
+                            default:
+                                System.out.println("Enter valid choice");
+                                break;
+                        }
+
+                    }
                     break;
                 }
 
-                case 4:
-                    issueBookView.returnBook();
+                case 4: {
+                    if (!new LoginView().init()) {
+                        new LoginView().init();
+                    }
                     break;
 
-                case 5:
-                    issueBookView.issueHistory();
-                    break;
-
-                case 6: {
-                    issueBookView.issuedBooks();
-                    break;
                 }
 
-                case 7: {
-                    issueBookView.showAllOverDues();
-                    break;
-                }
-
-                case 8: {
-                    new LoginView().init();
-                    return;
-                }
-
-                case 9: {
+                case 5: {
                     System.exit(0);
                 }
             }

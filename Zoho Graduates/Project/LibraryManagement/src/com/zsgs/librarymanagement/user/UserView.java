@@ -29,6 +29,7 @@ public class UserView {
             System.out.print("Enter the phone number: ");
             phoneNumber = scanner.next();
         } while (!Validator.validatePhoneNo(phoneNumber));
+        scanner.nextLine();
         System.out.print("Enter the address : ");
         String address = scanner.nextLine();
         User user = new User(userName, phoneNumber, emailId, address);

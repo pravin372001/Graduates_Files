@@ -33,6 +33,7 @@ public class ManageBookView {
         int volume = scanner.nextInt();
         Book book = new Book(bookName, author, publication, edition, genre, availableCount, volume);
         manageBookModel.addBook(book);
+        
     }
 
     public void onSetupComplete() {
@@ -75,4 +76,8 @@ public class ManageBookView {
         manageBookModel.updateBookCount(bookId1, availableCount1);
     }
 
+    public void serializeBookList()
+    {
+        manageBookModel.serializeBookList();
+    }
 }
