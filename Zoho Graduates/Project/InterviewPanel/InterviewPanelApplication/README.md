@@ -12,7 +12,7 @@ The `HomePage` class serves as the central hub for navigating the interview pane
 - **Receptionist View**: Receptionist users can add, view, and remove candidates, simplifying candidate management.
 - **Human Resources View**: Human Resources users can manage the interview process, view remaining and selected candidates, and perform related tasks.
 
-## Installation
+## Dependencies
 
 This project requires the Gson library for handling JSON data. You can download the Gson jar file from here and include it in your project's classpath.
 
@@ -25,3 +25,18 @@ This project requires the Gson library for handling JSON data. You can download 
 
 ## Model Class
 ![alt text](image-1.png)
+
+## Admin Login
+![alt text](image-2.png)
+
+## Receptionist Login
+![alt text](image-3.png)
+
+## Candidate Added By Receptionist
+![alt text](image-6.png)
+
+## HumanResource Login
+![alt text](image-4.png)
+
+## InterviewProcess By Hr
+![alt text](image-5.png)

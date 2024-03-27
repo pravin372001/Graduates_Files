@@ -175,6 +175,7 @@ public class LibraryDatabase {
         return null;
     }
 
+    // Serialization saving the state of the object into json file
     public void serializeBookList(List<Book> bookList) {
         JsonSerialize.getJsonSerialize().serialize(bookList, "src/com/zsgs/librarymanagement/data/bookList.json");
     }
@@ -196,6 +197,7 @@ public class LibraryDatabase {
         JsonSerialize.getJsonSerialize().serialize(admin, "src/com/zsgs/librarymanagement/data/admin.json");
     }
 
+    // Deserialization retrieving the state of the object from json file
     private void setAdmin() {
         this.admin = JsonSerialize.getJsonSerialize().deserialize("src/com/zsgs/librarymanagement/data/admin.json",
                 Admin.class);
@@ -209,14 +211,14 @@ public class LibraryDatabase {
         this.issueBooks = issueBooks;
     }
 
-    public void setUsers() {
+    private void setUsers() {
         List<User> userList = JsonSerialize.getJsonSerialize()
                 .deserialize("src/com/zsgs/librarymanagement/data/userList.json", new TypeToken<List<User>>() {
                 });
         this.userList = userList;
     }
 
-    public void setBookList() {
+    private void setBookList() {
         List<Book> bookList = JsonSerialize.getJsonSerialize()
                 .deserialize("src/com/zsgs/librarymanagement/data/bookList.json", new TypeToken<List<Book>>() {
                 });

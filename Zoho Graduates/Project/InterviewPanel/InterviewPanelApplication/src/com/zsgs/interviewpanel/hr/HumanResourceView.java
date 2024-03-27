@@ -80,7 +80,7 @@ public class HumanResourceView {
         do {
             System.out.println("1.add next candidate to panel ");
             System.out.println("2.remove candidate from panel ");
-            System.out.println("3.bact to home page ");
+            System.out.println("3.back to home page ");
             System.out.print("Enter your choice : ");
             int choice = scanner.nextInt();
             if (choice == 1) {

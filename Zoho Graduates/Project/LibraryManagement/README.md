@@ -35,3 +35,18 @@ You can logout by selecting the "Logout" option from the main menu, or exit the 
 ## Dependencies
 
 This project requires the Gson library for handling JSON data. You can download the Gson jar file from here and include it in your project's classpath.
+
+## Model Class
+![alt text](image.png)
+
+## Homepage - Admin Login
+![alt text](image-1.png)
+
+## Manage Books Menu
+![alt text](image-2.png)
+
+## Manage Members Menu
+![alt text](image-3.png)
+
+## Manage IssueBooks
+![alt text](image-4.png)

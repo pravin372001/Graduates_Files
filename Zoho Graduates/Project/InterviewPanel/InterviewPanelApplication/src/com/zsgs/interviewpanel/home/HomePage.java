@@ -29,7 +29,7 @@ public class HomePage {
             try {
                 System.out.println("Welcome to the Interview Panel");
                 System.out.println("┌──────────────────────────────┐");
-                System.out.println("│       Receptionist Menu      │");
+                System.out.println("│       Admin Menu             │");
                 System.out.println("├──────────────────────────────┤");
                 System.out.println("│ 1. Add Receptionist          │");
                 System.out.println("│ 2. Remove Receptionist       │");
@@ -126,7 +126,7 @@ public class HomePage {
             try {
                 System.out.println("Welcome Human Resources");
                 System.out.println("┌──────────────────────────────┐");
-                System.out.println("│        Main Menu             │");
+                System.out.println("│        HR Menu               │");
                 System.out.println("├──────────────────────────────┤");
                 System.out.println("│ 1. Interview Process         │");
                 System.out.println("│ 2. Remaining Candidates      │");
