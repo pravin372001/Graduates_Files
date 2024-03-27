@@ -1,5 +1,6 @@
 package com.zsgs.interviewpanel;
 
+import com.zsgs.interviewpanel.datalayer.InterViewPanelDB;
 import com.zsgs.interviewpanel.login.LoginView;
 
 public class InterviewPanelApp {
@@ -28,12 +29,20 @@ public class InterviewPanelApp {
         return interviewPanel;
     }
 
-    public void init() {
+    private void init() {
         LoginView loginView = new LoginView();
         loginView.init();
     }
 
     public static void main(String[] args) {
+        System.out.println(
+                InterviewPanelApp.getInstance().getAppName() + " " + InterviewPanelApp.getInstance().getAppVersion());
+        InterviewPanelApp.getInstance().getFromDB();
         InterviewPanelApp.getInstance().init();
+
+    }
+
+    private void getFromDB() {
+        InterViewPanelDB.getInstance().deserializeFromDb();
     }
 }

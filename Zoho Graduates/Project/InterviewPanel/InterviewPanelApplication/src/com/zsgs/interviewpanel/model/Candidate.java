@@ -1,24 +1,23 @@
 package com.zsgs.interviewpanel.model;
 
+import com.zsgs.interviewpanel.datalayer.InterViewPanelDB;
+
 public class Candidate {
     private int candidateId;
-    private static int candidateIdCounter = 1;
     private String candidateName;
     private String candidateEmail;
     private String candidateMobile;
-    private String candidateAddress;
-    private String candidateSkills;
     private String candidateQualification;
+    private int hrId;
 
-    public Candidate(String candidateName, String candidateEmail, String candidateMobile, String candidateAddress,
-            String candidateSkills, String candidateQualification) {
-        this.candidateId = candidateIdCounter++;
+    public Candidate(String candidateName, String candidateEmail, String candidateMobile,
+            String candidateQualification, int hrId) {
+        this.candidateId = InterViewPanelDB.getInstance().getCandidateList(hrId).size() + 1;
         this.candidateName = candidateName;
         this.candidateEmail = candidateEmail;
         this.candidateMobile = candidateMobile;
-        this.candidateAddress = candidateAddress;
-        this.candidateSkills = candidateSkills;
         this.candidateQualification = candidateQualification;
+        this.hrId = hrId;
     }
 
     public int getCandidateId() {
@@ -53,28 +52,20 @@ public class Candidate {
         this.candidateMobile = candidateMobile;
     }
 
-    public String getCandidateAddress() {
-        return candidateAddress;
-    }
-
-    public void setCandidateAddress(String candidateAddress) {
-        this.candidateAddress = candidateAddress;
-    }
-
-    public String getCandidateSkills() {
-        return candidateSkills;
-    }
-
-    public void setCandidateSkills(String candidateSkills) {
-        this.candidateSkills = candidateSkills;
-    }
-
     public String getCandidateQualification() {
         return candidateQualification;
     }
 
     public void setCandidateQualification(String candidateQualification) {
         this.candidateQualification = candidateQualification;
+    }
+
+    public int getHrId() {
+        return hrId;
+    }
+
+    public void setHrId(int hrId) {
+        this.hrId = hrId;
     }
 
 }

@@ -2,8 +2,10 @@ package com.zsgs.interviewpanel.admin;
 
 import com.zsgs.interviewpanel.home.HomePage;
 import com.zsgs.interviewpanel.validator.Validator;
+import com.zsgs.interviewpanel.model.Employee;
 
 import java.util.Scanner;
+import java.util.Map;
 
 public class AdminView {
     AdminModel adminModel;
@@ -18,7 +20,7 @@ public class AdminView {
             String password;
             String emailId;
             String name;
-            System.out.println("Initiate Setup");
+            System.out.println("Admin Setup");
             do {
                 System.out.print("Enter the name : ");
                 name = scanner.next();
@@ -44,5 +46,10 @@ public class AdminView {
 
     public void showMessage(String string) {
         System.out.println(string);
+    }
+
+    public void showEmployees() {
+        Map<Integer, Employee> employeeMap = adminModel.getAllEmployees();
+        employeeMap.forEach((k, v) -> System.out.println(k + " " + v));
     }
 }

@@ -1,18 +1,27 @@
-## Getting Started
+# Interview Panel Home Page
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This project represents the home page functionality for an interview panel system. It provides menus and options for different user roles such as Admin, Receptionist, and Human Resources.
 
-## Folder Structure
+## Overview
 
-The workspace contains two folders by default, where:
+The `HomePage` class serves as the central hub for navigating the interview panel system. It offers distinct menus tailored to each user role, facilitating seamless interaction with the system's functionalities.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Features
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **Admin View**: Admin users can manage receptionists and human resources, view employees, and perform administrative tasks.
+- **Receptionist View**: Receptionist users can add, view, and remove candidates, simplifying candidate management.
+- **Human Resources View**: Human Resources users can manage the interview process, view remaining and selected candidates, and perform related tasks.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Installation
 
-## Dependency Management
+This project requires the Gson library for handling JSON data. You can download the Gson jar file from here and include it in your project's classpath.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Usage
+
+1. **Run the Application**: Import the project into your IDE and run the application.
+2. **Navigate Menus**: Upon launching, users are presented with menus corresponding to their roles.
+3. **Interact**: Users can select options from the menus to perform various tasks within the interview panel system.
+4. **Logout or Exit**: Users can logout to return to the login screen or exit the application as needed.
+
+## Model Class
+![alt text](image.png)
