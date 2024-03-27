@@ -24,4 +24,4 @@ This project requires the Gson library for handling JSON data. You can download 
 4. **Logout or Exit**: Users can logout to return to the login screen or exit the application as needed.
 
 ## Model Class
-![alt text](image.png)
+![alt text](image-1.png)
