@@ -71,3 +71,134 @@ Leet code:
 520. Detect Capital
 551. Student Attendance Record I
 --------------------------------------------------------------
+21-03-2024(thu)
+Soft skill session by sujaritha san
+Java class (topic - Overloaded) by tamarai san
+
+worked on InterviewPanel console application
+Add validation to Library Management Application
+
+Problem solving 
+Leet code:
+
+434. Number of Segments in a String
+168. Excel Sheet Column Title
+500. Keyboard Row
+--------------------------------------------------------------
+22-03-2024
+worked on InterviewPanel console application
+Added input handling on Library Management Application
+
+Problem solving 
+Leet code:
+
+
+657. Robot Return to Origin
+796. Rotate String
+--------------------------------------------------------------
+25-03-2024
+Tech session by Raj san
+Java Session - Method overriding by thamarai san
+Tech terms Session - IP, OSI MODEL by batchmates
+
+Console application development 
+   -worked on InterviewPanel console application
+
+
+Problem solving 
+Leet code:
+
+287. Find the Duplicate Number
+442. Find All Duplicates in an Array
+--------------------------------------------------------------
+26-03-2024
+Java Session - Polymorphism by thamarai san
+Tech terms Session - UDP ,TCP by batchmates
+
+Console application development 
+   -worked on InterviewPanel console application
+
+Assingment
+   -Classes & Objects Started
+--------------------------------------------------------------
+27-03-2024
+Non-Instruction day for complete the pending tasks
+completed Console application and assignments
+--------------------------------------------------------------
+28-03-2024
+Tech session by Raj san
+Soft skill session by Sujaritha san
+Java Session - Interface by thamarai san
+
+Assignment
+    - Overriding & Overloading completed
+
+Problem solving 
+Leet code:
+
+541. Reverse String II
+557. Reverse Words in a String III
+--------------------------------------------------------------
+29-03-2024
+Java Session - packages by thamarai san
+Tech terms Session (Topic - DNS) by batch mates
+
+Assignment
+    - Interface & packages (Started)
+
+Problem solving 
+Leet code: 71, 2256
+--------------------------------------------------------------
+01-04-2024
+Java Session - Exception Handling by thamarai san
+Tech terms Session (Topic - Load Balancing) by batch mates
+
+Assignment
+     - Assignment - Exception Handling(Completed)
+
+Problem solving 
+Leet code: 150
+--------------------------------------------------------------
+02-04-2024
+
+Time complexity session by batchmate
+Attended Evaluation - Process for stream separation(Android)
+
+
+Assignment
+     - Abstract Classes and abstract methods(Started)
+
+Problem solving 
+Leet code: 151, 153
+--------------------------------------------------------------
+03-04-2024
+
+Kotlin - Basics
+group dicussion by batch mates on multiple programs
+
+Assignment
+     - Abstract Classes and abstract methods(completed)
+
+Problem solving 
+Leet code: 78,79
+--------------------------------------------------------------
+04-04-2024
+
+Kotlin - Basics
+Dicussion with batch mates on multiple programs
+
+Problem solving :
+Pattern programs
+Leet code: 1614
+--------------------------------------------------------------
+08-04-2024
+
+Database session (introduction) by Sudhakar san & Uma Mageshwari san
+Kotlin - OOP
+Java collection session (Topic - ArrayList & LinkedList) by Tamarai san
+Assignment excersim - completed
+Book reading session by Raj san
+
+
+Problem solving:
+Leet code :1700, 2073
