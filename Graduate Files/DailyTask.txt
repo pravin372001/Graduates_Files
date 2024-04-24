@@ -1,0 +1,204 @@
+07-03-2024(Thu)
+1.Attended Raj san live session on book reading topic of programming languages (9.30 to 10.30)
+2.Attended Thamarai san live session on java chapter - 2 (java basics - II) (11.30 to 1)
+3.Work out the assignment given by roohi san (4 problems in java) (2.30 to 4.30)
+4.Watched pre recorded videos of (java basics - II) 
+5.Watched quiz recorded videos of (java basics - I)
+6.Work out the Task-2 problems in java
+Moral of the Day --- > Wake up early then it will be longer day
+
+----------------------------------------------------------------
+
+08-03-2024(Fri)
+1.Watched pre recorded videos of (java basics -II) (8.30 to 10.30)
+2.Attended Thamarai san live sessions of java chapter - 3 (java basics - III) (10.30 to 12) 
+3.Work out problems on hackerrank given by thamarai san live sessions of java chapter (2.30 to 3.00)
+4.Attended quiz live sessions of java chapter - 1 (java basics -I) (3.30 to 4.30)
+5.Work out problems of Task 3 in CodingBat website
+Moral of the Day --- > Dont waste more time in spirtual places utilize the time
+
+----------------------------------------------------------------
+
+09-03-2024(Sat)
+1.Watched pre recorded videos of java Chapter - 3
+2.Compelted the Assignment 1, 2 in trainercentral website
+3.Compelted the task-3 in CodingBat website
+
+----------------------------------------------------------------
+
+10-03-2024(Sun)
+1.Compelted the Assignment 3,4 in trainercentral website
+2.Watched pre recorded videos of java Chapter - 3
+
+----------------------------------------------------------------
+
+18-03-2024(mon)
+Book Reading session by Raj san
+Java class oops concept session by tamarai san
+
+Problem solving : Leetcode - 485, 492
+
+Worked on two console based application
+ -Library management console application 	
+ -InterviewPanel application 
+---------------------------------------------------------------
+
+19-03-2024(tue)
+Java class (topic - constructor) by tamarai san
+Console discussion with batch mates
+Application development(topic - optimization) by bala san
+
+worked on InterviewPanel and library management system console application
+Solved Assignment - 5(Arrays)
+
+Problem solving 
+Leet code:
+
+2325. Decode the Message
+415. Add Strings
+412. Fizz Buzz
+--------------------------------------------------------------
+20-03-2024(wed)
+Java class (topic - Inheritance) by tamarai san
+Completed Assignment-6 (Strings)
+Code chef context attempted 5 problems (Solved 3 problems)
+
+worked on InterviewPanel console application
+
+Problem solving 
+Leet code:
+
+520. Detect Capital
+551. Student Attendance Record I
+--------------------------------------------------------------
+21-03-2024(thu)
+Soft skill session by sujaritha san
+Java class (topic - Overloaded) by tamarai san
+
+worked on InterviewPanel console application
+Add validation to Library Management Application
+
+Problem solving 
+Leet code:
+
+434. Number of Segments in a String
+168. Excel Sheet Column Title
+500. Keyboard Row
+--------------------------------------------------------------
+22-03-2024
+worked on InterviewPanel console application
+Added input handling on Library Management Application
+
+Problem solving 
+Leet code:
+
+
+657. Robot Return to Origin
+796. Rotate String
+--------------------------------------------------------------
+25-03-2024
+Tech session by Raj san
+Java Session - Method overriding by thamarai san
+Tech terms Session - IP, OSI MODEL by batchmates
+
+Console application development 
+   -worked on InterviewPanel console application
+
+
+Problem solving 
+Leet code:
+
+287. Find the Duplicate Number
+442. Find All Duplicates in an Array
+--------------------------------------------------------------
+26-03-2024
+Java Session - Polymorphism by thamarai san
+Tech terms Session - UDP ,TCP by batchmates
+
+Console application development 
+   -worked on InterviewPanel console application
+
+Assingment
+   -Classes & Objects Started
+--------------------------------------------------------------
+27-03-2024
+Non-Instruction day for complete the pending tasks
+completed Console application and assignments
+--------------------------------------------------------------
+28-03-2024
+Tech session by Raj san
+Soft skill session by Sujaritha san
+Java Session - Interface by thamarai san
+
+Assignment
+    - Overriding & Overloading completed
+
+Problem solving 
+Leet code:
+
+541. Reverse String II
+557. Reverse Words in a String III
+--------------------------------------------------------------
+29-03-2024
+Java Session - packages by thamarai san
+Tech terms Session (Topic - DNS) by batch mates
+
+Assignment
+    - Interface & packages (Started)
+
+Problem solving 
+Leet code: 71, 2256
+--------------------------------------------------------------
+01-04-2024
+Java Session - Exception Handling by thamarai san
+Tech terms Session (Topic - Load Balancing) by batch mates
+
+Assignment
+     - Assignment - Exception Handling(Completed)
+
+Problem solving 
+Leet code: 150
+--------------------------------------------------------------
+02-04-2024
+
+Time complexity session by batchmate
+Attended Evaluation - Process for stream separation(Android)
+
+
+Assignment
+     - Abstract Classes and abstract methods(Started)
+
+Problem solving 
+Leet code: 151, 153
+--------------------------------------------------------------
+03-04-2024
+
+Kotlin - Basics
+group dicussion by batch mates on multiple programs
+
+Assignment
+     - Abstract Classes and abstract methods(completed)
+
+Problem solving 
+Leet code: 78,79
+--------------------------------------------------------------
+04-04-2024
+
+Kotlin - Basics
+Dicussion with batch mates on multiple programs
+
+Problem solving :
+Pattern programs
+Leet code: 1614
+--------------------------------------------------------------
+08-04-2024
+
+Database session (introduction) by Sudhakar san & Uma Mageshwari san
+Kotlin - OOP
+Java collection session (Topic - ArrayList & LinkedList) by Tamarai san
+Assignment excersim - completed
+Book reading session by Raj san
+
+
+Problem solving:
+Leet code :1700, 2073
